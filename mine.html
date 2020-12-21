@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>portfolio_sieun_2020</title>
+        <meta charset="UTF-8"/>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <style>
+            #bigCircle {
+                position: absolute;
+                width: 650px; height: 650px;
+                left: 50%; top: 50%;
+                margin-top: -325px; margin-left: -325px;
+                border-radius: 50% 50%;
+                border: 1px solid #000000; box-sizing: border-box;
+            }
+            #txt1{
+                position: absolute;
+                width: 155px; height: 47px;
+                top: 76px; left: 250px;
+                font-weight: normal;
+                font-size: 40px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+            }
+            #name{
+                position: absolute;
+                width: 148px; height: 35px;
+                top: 125px; left: 255px;
+                font-weight: normal;
+                font-size: 30px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+            }
+            #date{
+                position: absolute;
+                width: 120px; height: 18px;
+                top: 165px; left: 275px;
+                font-weight: normal;
+                font-size: 15px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+            }
+            .line{
+                position: absolute;
+                width: 0.5px; height: 113.5px;
+                background: black; left: 325px;
+            }
+            #line1{
+                top: 200px;
+            }
+            #txt2{
+                position: absolute;
+                width: 500px; height: 40px;
+                top: 325px; left: 75px;
+                font-weight: normal;
+                font-size: 17px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+            }
+            #line_ver{
+                position: absolute;
+                width: 35px; height: 0.5px;
+                background: black;
+                top: 380px; left: 308px;
+            }
+            #txt3{
+                position: absolute;
+                width: 100px; height: 18px;
+                top: 390px; left: 280px;
+                font-weight: normal;
+                font-size: 15px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+            }
+            #line2{
+                top: 425px;
+            }
+            #click{
+                position: absolute;
+                width: 130px; height: 35px;
+                top: 550px; left: 295px;
+                font-weight: normal;
+                font-size: 30px;   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center; align-items: center;
+                display: flex; color: #000000;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bigCircle">
+            <div id="txt1" class="Circle">Portfolio</div>
+            <div id="name">Sieun,Choi</div>
+            <div id="date">
+                <script>
+                    let today = new Date();   
+                    let year = today.getFullYear(); // 년도
+                    let month = today.getMonth() + 1;  // 월
+                    let date = today.getDate();  // 날짜
+
+                    document.write(date) //날짜
+                    if(date==21 || date==31)document.write('st ')
+                    else if(date==22)document.write('nd ')
+                    else if(date==23)document.write('rd ')
+                    else document.write('th ')
+
+                    if(month==1)document.write('Jan') //월
+                    else if(month==2)document.write('Feb')
+                    else if(month==3)document.write('Mar')
+                    else if(month==4)document.write('Apr')
+                    else if(month==5)document.write('May')
+                    else if(month==6)document.write('Jun')
+                    else if(month==7)document.write('Jul')
+                    else if(month==8)document.write('Aug')
+                    else if(month==9)document.write('Sep')
+                    else if(month==10)document.write('Oct')
+                    else if(month==11)document.write('Nov')
+                    else document.write('Dec')
+
+                    document.write(', '+year)
+                </script>
+            </div>
+            <div id="line1" class='line'></div>
+            <div id="txt2">I’m trying to focus on something, bring it back alive from
+                the uncharted areas of the inner image, inner space.</div>
+            <div id="line_ver"></div>
+            <div id="txt3">Jordan Belson</div>
+            <div id="line2" class='line'></div>
+            <div><a href="C:\Users\tldms\OneDrive\바탕 화면\min2.html" id="click">Click</a></div>
+    </body>
+</html>
